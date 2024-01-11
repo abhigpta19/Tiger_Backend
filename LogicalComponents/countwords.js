@@ -4,8 +4,10 @@ function removePunctuation(text)
 }
 function countWords(text) 
 {
-    text= removePunctuation(text);
-  const words = text.trim().split(/\s+/);
+  //first remove all the punctuations from the text content for counting the total number of words count
+  refined_text= removePunctuation(text);
+  //all the words will be stored in words array which are separated by space
+  const words = refined_text.trim().split(/\s+/);
   return words.length;
 }
 

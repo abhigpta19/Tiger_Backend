@@ -1,17 +1,11 @@
 const express = require('express');
-
+const {limiter} = require('./Middlewares/Limiter')
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-
+//for parsing through the json file
 app.use(express.json());
-
-
-const rateLimit = require('express-rate-limit');
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
-});
+//to limit number of request from particualr IP and we can change the amount of request and time from Middleware --> Limiter.js
 app.use(limiter);
 
 // Define routes
