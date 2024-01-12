@@ -1,5 +1,5 @@
 const Redis = require('ioredis');
-const redis = new Redis();
+const redis = new Redis(`rediss://red-cmgmr88l5elc73809t7g:GbjyOUX9yM6lbokABmQb40luLAeNMvrn@singapore-redis.render.com:6379`);
 const { countWords} = require('../LogicalComponents/countwords');
 const { calculateAverageWordLength} = require('../LogicalComponents/calculateavglength');
 
@@ -30,6 +30,13 @@ const getPostAnalysis = async (req, res) =>
   try 
   {
     const { id } = req.params;
+    //checking if id is present or not
+    const ifexist = await redis.exists(id);
+    if(!ifexist)
+    {
+      res.status(404).json({msg : "Id not found"})
+      return;
+    }
     //retreival of the post content in encoded format which has the unique id provided in the route
     const encoded_content = await redis.get(id);
     //now we will decode our data content so that we can perform the operations on it
