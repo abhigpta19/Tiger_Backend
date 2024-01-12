@@ -9,7 +9,7 @@ This backend is a Social Media Analytics Platform is a backend application desig
 - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Project Setup](#project-setup)
-- [Testing the Application](#Test-the-application)
+- [Testing the Application](#testing-the-application)
 - [Additional Notes](#additional-notes)
 
 ## Technologies Used
