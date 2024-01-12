@@ -39,7 +39,7 @@ const getPostAnalysis = async (req, res) =>
     //the logic of the word count is implemented in the folder LogicalComponents --> calculateavglength.js
     const average_length= await calculateAverageWordLength(content);
     //upon successful calculation of above elements we will send them as response in json format
-    res.status(200).json({sentence: content, word_Count: count_of_words, Average_Word_Length: average_length});
+    res.status(200).json({Content : content, word_Count: count_of_words, Average_Word_Length: average_length});
   } 
   catch (error) 
   {
