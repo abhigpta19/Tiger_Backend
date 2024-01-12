@@ -1,4 +1,5 @@
 const Redis = require('ioredis');
+//following is the connection URL which is connected to the Redis instance in the Render
 const redis = new Redis(`rediss://red-cmgmr88l5elc73809t7g:GbjyOUX9yM6lbokABmQb40luLAeNMvrn@singapore-redis.render.com:6379`);
 const { countWords} = require('../LogicalComponents/countwords');
 const { calculateAverageWordLength} = require('../LogicalComponents/calculateavglength');

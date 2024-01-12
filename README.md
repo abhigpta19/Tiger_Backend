@@ -1,6 +1,7 @@
 # Tiger Global Backend Assignment 
 
-This backend is a Social Media Analytics Platform is a backend application designed to handle social media posts, provide analytics, and support scalable operations. This project is implemented using the javascript (NodeJS and ExpressJS), with additional technologies such as Redis for database and caching.
+This backend is a Social Media Analytics Platform is a backend application designed to handle social media posts, provide analytics, and support scalable operations. This project is implemented using the javascript (NodeJS and ExpressJS), with additional technologies such as Redis for database and caching. The application is also deployed on Render on the below link.
+#### Deployment link : [https://social-media-post-cxvw.onrender.com/](https://social-media-post-cxvw.onrender.com).
 
 ## Table of Contents
 
@@ -45,7 +46,6 @@ This backend is a Social Media Analytics Platform is a backend application desig
   
    ```bash
    nodemon index.js
-
 ## Testing the Application
 
 To test the routes you can use Postman or Thunder Client on VS Code.
@@ -56,6 +56,7 @@ To test the routes you can use Postman or Thunder Client on VS Code.
 - **Endpoint:** `POST /api/v1/posts/`
 - **Description:** Create a new social media post.
 - **Payload:** JSON payload with text content and a unique identifier.
+- **Post on Deployed Server:** You can directly post in the deployed route        https://social-media-post-cxvw.onrender.com/api/v1/posts/
 - **Example:**
   ```json
   {
@@ -75,9 +76,13 @@ To test the routes you can use Postman or Thunder Client on VS Code.
     "word_Count": 5, 
     "Average_Word_Length": "3.4"
   }
+- **Browser:**  You can directly get the data if you type the url in browser by replacing {id} with the unique id of the post.  https://social-media-post-cxvw.onrender.com/api/v1/posts/{id}/analysis/
 ## Additional Notes
 
 ### Rate Limiting: 
 The application includes rate limiting based on IP using Express.js middleware. We made a separate middleware in the Middleware section for this purpose.
 ### Caching Mechanism
 Redis Database supports caching mechanism for the fast retrieval of data because it uses primary memory of the system. So we use it in this assignment.
+### Deployment
+The Nodejs application is deployed on Render and the deployment link is https://social-media-post-cxvw.onrender.com 
+Instances of redis has been made on Render and it is connected to the application with the Connection URL.
