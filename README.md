@@ -1,7 +1,7 @@
 # Tiger Global Backend Assignment 
 
 This backend is a Social Media Analytics Platform is a backend application designed to handle social media posts, provide analytics, and support scalable operations. This project is implemented using the javascript (NodeJS and ExpressJS), with additional technologies such as Redis for database and caching. The application is also deployed on Render on the below link.
-#### Deployment link : [https://social-media-post-cxvw.onrender.com/](https://social-media-post-cxvw.onrender.com).
+#### Deployment link : [https://social-media-post-cxvw.onrender.com](https://social-media-post-cxvw.onrender.com)
 
 ## Table of Contents
 
