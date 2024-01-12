@@ -3,6 +3,8 @@
 This backend is a Social Media Analytics Platform is a backend application designed to handle social media posts, provide analytics, and support scalable operations. This project is implemented using the javascript (NodeJS and ExpressJS), with additional technologies such as Redis for database and caching. The application is also deployed on Render on the below link.
 #### Deployment link : [https://social-media-post-cxvw.onrender.com](https://social-media-post-cxvw.onrender.com)
 
+#### Video Demonstration Link : [Demo Video](https://drive.google.com/drive/folders/1R53mud5dOgBbOMckZyJbSGDIXwiX0f9A?usp=sharing)
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
